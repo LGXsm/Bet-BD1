@@ -1,0 +1,14 @@
+# Private configuration and live data
+.env
+.env.*
+!.env.example
+**/config.php
+**/state.json
+**/bet_bd1_private/
+
+# Generated files
+hostgator/build/
+__pycache__/
+*.pyc
+node_modules/
+dist/

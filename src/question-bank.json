@@ -1,0 +1,497 @@
+[
+  {
+    "id": 1,
+    "text": "O Capítulo 5 do livro de C.J. Date introduz formalmente o conceito de Tipo. Na teoria relacional clássica formulada por Codd, qual outro termo foi historicamente empregado como sinônimo desse conceito?",
+    "options": [
+      "Atributo de relação no modelo conceitual.",
+      "Domínio de valores no modelo relacional.",
+      "Tupla do corpo de uma variável de relação.",
+      "RelVar declarada no esquema de banco de dados."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "text": "Sobre a distinção conceitual entre Valor e Variável, assinale a alternativa correta segundo a teoria relacional:",
+    "options": [
+      "Um valor é um recipiente mutável mantido na RAM; uma variável é uma constante abstrata mantida no disco.",
+      "Um valor pode ser alterado por comandos DML; uma variável é imutável e permanece constante em todo o sistema.",
+      "Um valor é um elemento abstrato e imutável; uma variável é um recipiente mutável que armazena um valor num dado instante.",
+      "Um valor é visível apenas no nível interno do SGBD; uma variável é visível apenas na interface externa do usuário."
+    ],
+    "correct": 2
+  },
+  {
+    "id": 3,
+    "text": "Qual é a principal justificativa do autor para defender a Tipagem Forte (Strong Typing) nos SGBDs relacionais?",
+    "options": [
+      "Otimizar a execução física de consultas SQL no nível interno, reduzindo o consumo de memória RAM do servidor.",
+      "Capturar erros lógicos no tempo de compilação, impedindo operações entre tipos distintos sem conversão explícita.",
+      "Bloquear a criação de chaves primárias compostas e garantir a ordenação automática das tuplas no nível conceitual.",
+      "Forçar a conversão implícita de tipos no nível conceitual para simplificar a escrita de junções no SGBD."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 4,
+    "text": "O que é uma Representação Possível (Possible Representation / POSSREP) de um tipo escalar?",
+    "options": [
+      "A estrutura binária de alocação de blocos e ponteiros de disco usada fisicamente pelo SGBD.",
+      "Uma forma declarada de expor a estrutura lógica de um tipo por meio de componentes, seletores e operadores THE_.",
+      "A conversão automática de strings em inteiros realizada implicitamente pela linguagem SQL.",
+      "Um ponteiro de memória física que referencia a primeira tupla armazenada de uma relação."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 5,
+    "text": "Para qualquer tipo \\(T\\) definido na teoria relacional, quais dois operadores genéricos devem estar obrigatoriamente definidos?",
+    "options": [
+      "Os operadores de projeção (PROJECT) e restrição (RESTRICT).",
+      "Os operadores de agregação (SUM) e média (AVG).",
+      "Os operadores de igualdade (=) e atribuição (:=).",
+      "Os operadores de agrupamento (GROUP BY) e ordenação (ORDER BY)."
+    ],
+    "correct": 2
+  },
+  {
+    "id": 6,
+    "text": "Como são chamados os operadores encarregados de construir um valor de determinado tipo a partir de seus componentes lógicos (ex.: PESO(14.5) ou PONTO(3, 4))?",
+    "options": [
+      "Operadores de Seleção ou Seletores de Valor.",
+      "Operadores de Atualização ou Mutadores de Estado.",
+      "Triggers de Integridade do Catálogo de Dados.",
+      "Operadores de Agregação de Tuplas da Relação."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 7,
+    "text": "Um operador que lê e retorna dados sem alterar o estado de qualquer variável existente no banco de dados é classificado como:",
+    "options": [
+      "Operador Mutador de estado de memória.",
+      "Operador Somente de Leitura ou Função.",
+      "Pseudovariável do lado esquerdo da atribuição.",
+      "Gerador de Tipos Não Escalares."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 8,
+    "text": "Na linguagem Tutorial D, o operador utilizado para ler o componente \\(X\\) da representação possível de um valor do tipo PONTO é:",
+    "options": [
+      "O método GET_X().",
+      "O operador THE_X().",
+      "O comando SELECT X.",
+      "O operador EXTRACT_X()."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 9,
+    "text": "Qual das opções a seguir apresenta um exemplo de Gerador de Tipos (Type Generator) na teoria relacional?",
+    "options": [
+      "O tipo escalar embutido INTEGER.",
+      "O tipo alfanumérico CHAR.",
+      "Os geradores TUPLE ou RELATION.",
+      "O tipo lógico booleano BOOLEAN."
+    ],
+    "correct": 2
+  },
+  {
+    "id": 10,
+    "text": "Segundo o Capítulo 5, a equivalência conceitual entre \"Domínios\" e \"Classes de Objetos\" permite integrar quais duas tecnologias?",
+    "options": [
+      "Bancos de Dados Hierárquicos e Bancos em Rede.",
+      "Bancos de Dados Relacionais e Orientados a Objetos.",
+      "Linguagem SQL e Planilhas Eletrônicas Comerciais.",
+      "Esquema Conceitual e Arquivos Físicos de Disco."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 11,
+    "text": "Qual dos seguintes tipos de dados escalares embutidos é suportado nativamente pelo padrão SQL?",
+    "options": [
+      "O tipo racional RATIONAL.",
+      "O tipo temporal TIMESTAMP.",
+      "O gerador TUPLE_TYPE.",
+      "A variável de relação RELVAR."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 12,
+    "text": "Quando um usuário cria um novo tipo simples baseado em um tipo embutido usando CREATE TYPE ... AS <tipo_base> FINAL na SQL, ele cria:",
+    "options": [
+      "Um tipo DISTINCT do usuário.",
+      "Um tipo Estruturado Mutável.",
+      "Um tipo Indistinto Numérico.",
+      "Uma Pseudovariável de Coluna."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 13,
+    "text": "Como o padrão SQL trata, por padrão, a comparação direta de igualdade entre tipos numéricos embutidos distintos (ex.: INTEGER e FLOAT)?",
+    "options": [
+      "Rejeita a comparação na compilação devido ao uso de tipagem forte estrita em todos os níveis.",
+      "Realiza uma coerção implícita de tipo para permitir a comparação entre os valores numéricos.",
+      "Dispara uma exceção fatal de tempo de execução e interrompe o processamento da transação.",
+      "Converte obrigatoriamente ambos os valores para strings de texto antes de efetuar a checagem."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 14,
+    "text": "Em Tutorial D, quando escrevemos THE_X(P) := 5.0 (onde \\(P\\) é uma variável do tipo PONTO), a construção THE_X(P) atua como:",
+    "options": [
+      "Uma Função de Agregação de Conjunto.",
+      "Uma Pseudovariável de Atualização.",
+      "Uma Constante Literal Escalar.",
+      "Uma Restrição de Chave Estrangeira."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 15,
+    "text": "Qual é o efeito direto de uma restrição de tipo (CONSTRAINT) associada à definição de um tipo escalar em Tutorial D?",
+    "options": [
+      "Impede que a tabela física contenha mais de 5000 registros armazenados no disco rígido.",
+      "Garante que nenhum valor inválido seja gerado ou atribuído a variáveis daquele tipo.",
+      "Converte automaticamente qualquer valor fora do limite para o valor mínimo permitido.",
+      "Desativa a validação de tipagem forte durante a execução de instruções de inserção."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 16,
+    "text": "Considere que N1 e N2 são variáveis do tipo INTEGER, enquanto Q1 é do tipo definido pelo usuário QDE. Em um sistema com tipagem forte estrita, qual instrução é válida?",
+    "options": [
+      "Q1 := N1 + N2;",
+      "IF N1 = Q1 THEN ...",
+      "Q1 := QDE( N1 + N2 );",
+      "N1 := Q1;"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 17,
+    "text": "A distinção entre um Tipo (conceitual) e sua Representação Física (armazenamento) fundamenta qual princípio dos bancos de dados?",
+    "options": [
+      "Princípio da Informação Uniforme.",
+      "Independência de Dados Física e Lógica.",
+      "Fechamento Relacional da Álgebra.",
+      "Durabilidade das Transações ACID."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 18,
+    "text": "O que ocorre conceitualmente ao executar a atribuição em pseudovariável THE_D(W) := 15.5; onde \\(W\\) é do tipo PESO?",
+    "options": [
+      "O SGBD altera diretamente os bits do arquivo em disco sem passar pela validação do modelo lógico.",
+      "A operação substitui todo o valor da variável por um novo valor gerado pelo seletor PESO(15.5).",
+      "O SGBD converte a variável \\(W\\) permanentemente para o tipo primitivo DECIMAL.",
+      "A operação é rejeitada pelo compilador porque operadores THE_ são estritamente de leitura."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 19,
+    "text": "No padrão SQL, qual instrução envolvendo o tipo DISTINCT denominado PESO (baseado em DECIMAL) é INVÁLIDA por violar a tipagem forte?",
+    "options": [
+      "SELECT * FROM P WHERE PESO = PESO(14.7);",
+      "SELECT * FROM P WHERE PESO = 14.7;",
+      "SELECT * FROM P WHERE PESO > PESO(:NP);",
+      "INSERT INTO P VALUES ('P1', PESO(10.0));"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 20,
+    "text": "Sobre os Tipos Estruturados no padrão SQL (CREATE TYPE ... AS (...)), é correto afirmar que:",
+    "options": [
+      "Impedem a declaração de atributos internos e proíbem o uso de métodos associados.",
+      "Apresentam comportamento idêntico aos tipos DISTINCT e não suportam mecanismos de herança.",
+      "Permitem definir tipos compostos com atributos nomeados e métodos, aproximando a SQL da orientação a objetos.",
+      "Substituem integralmente a necessidade de criar tabelas básicas no banco de dados conceitual."
+    ],
+    "correct": 2
+  },
+  {
+    "id": 21,
+    "text": "Por que C.J. Date prefere adotar o termo Tipo em substituição ao termo tradicional Domínio nas edições recentes de sua obra?",
+    "options": [
+      "Porque o termo domínio tornou-se uma marca comercial registrada e proibida em textos acadêmicos.",
+      "Para alinhar o modelo relacional à teoria de tipos rigorosa já consolidada na Ciência da Computação.",
+      "Porque o termo domínio restringe os valores permissíveis exclusivamente a números inteiros positivos.",
+      "Para atender a uma exigência formal estabelecida pelas normas ISO de padronização da SQL."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 22,
+    "text": "Se o tipo PONTO possuir duas representações possíveis declaradas em Tutorial D (Cartesiana e Polar), como o usuário interage com ele?",
+    "options": [
+      "O usuário é obrigado a escolher apenas uma representação, ficando a outra inativa para consultas.",
+      "O usuário utiliza os seletores de ambas livremente, pois o SGBD realiza as conversões automaticamente.",
+      "O SGBD duplica o espaço em disco para armazenar fisicamente cada ponto em ambas as formas.",
+      "A declaração de mais de uma representação possível para o mesmo tipo é proibida pela sintaxe."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 23,
+    "text": "O que caracteriza formalmente um Operador Polimórfico no contexto de linguagens de banco de dados?",
+    "options": [
+      "Um operador cuja execução é restrita aos usuários com privilégios de administrador de sistema.",
+      "Um operador cujo algoritmo se adapta a operandos de tipos distintos, como a igualdade (=).",
+      "Um operador que retorna sempre um valor booleano independentemente dos argumentos passados.",
+      "Um operador derivado automaticamente de uma consulta que contenha a cláusula SELECT *."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 24,
+    "text": "Considere a relação entre Literais e Seletores. Assinale a afirmativa correta segundo o Capítulo 5:",
+    "options": [
+      "Literais e seletores são sinônimos perfeitos em todas as linguagens de programação e SGBDs.",
+      "Literais representam valores de tipos embutidos; seletores são operadores que constroem valores.",
+      "Literais existem apenas no nível interno de disco; seletores existem apenas no nível externo.",
+      "Literais só podem ser empregados na definição de chaves primárias e estrangeiras."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 25,
+    "text": "Como o gerador de tipos ROW do padrão SQL difere conceitualmente de uma tabela básica do banco de dados?",
+    "options": [
+      "O ROW constrói um valor de tupla individual, enquanto a tabela representa uma variável de relação.",
+      "O ROW impede a inclusão de atributos numéricos, enquanto a tabela aceita qualquer tipo escalar.",
+      "O ROW pode ser utilizado exclusivamente dentro de comandos DDL do tipo CREATE TABLE.",
+      "O ROW e a tabela são conceitos idênticos sem qualquer diferença teórica ou prática."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 26,
+    "text": "Qual é a consequência prática da regra de substituição garantida em sistemas com suporte a hierarquias de tipos (subtipos e supertipos)?",
+    "options": [
+      "Um valor de um subtipo pode ser fornecido em qualquer contexto onde um valor do supertipo é esperado.",
+      "O SGBD converte automaticamente todos os valores armazenados na tabela para o valor nulo (NULL).",
+      "As consultas relacionais do tipo JOIN deixam de funcionar entre tabelas que utilizem subtipos.",
+      "O supertipo perde automaticamente todos os seus operadores e métodos definidos anteriormente."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 27,
+    "text": "Qual é a principal crítica de C.J. Date em relação ao uso excessivo de Coerção Implícita de tipos pelos SGBDs comerciais?",
+    "options": [
+      "A coerção aumenta significativamente o tempo de transmissão dos dados através da rede local.",
+      "A coerção oculta erros graves de lógica de programação que deveriam ser detectados pelo compilador.",
+      "A coerção impede que o banco de dados seja salvo corretamente em meios de armazenamento físico.",
+      "A coerção obriga o programador a utilizar cursores explícitos para manipular tabelas."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 28,
+    "text": "Se declararmos a variável \\(V\\) como RELATION { V# CHAR, STATUS INTEGER }, a especificação RELATION { ... } representa:",
+    "options": [
+      "Um operador de atualização de tupla individual.",
+      "A invocação de um Gerador de Tipos construindo um tipo não escalar.",
+      "Uma declaração explícita de chave estrangeira.",
+      "Um comando DDL exclusivo do padrão SQL:1999."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 29,
+    "text": "Como o operador CAST do padrão SQL se relaciona com os conceitos de tipagem apresentados no Capítulo 5?",
+    "options": [
+      "É um mecanismo explícito de conversão de tipos empregado para converter valores entre tipos compatíveis.",
+      "É uma instrução DDL empregada exclusivamente para a criação de restrições de integridade.",
+      "É um operador algébrico responsável por eliminar tuplas duplicadas do resultado de consultas.",
+      "É uma estrutura física de alocação que cria ponteiros diretos para os registros da tabela base."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 30,
+    "text": "Nas operações de Atribuição Múltipla em Tutorial D (ex.: A := B, C := D;), como ocorre a avaliação dos valores?",
+    "options": [
+      "As atribuições ocorrem sequencialmente e a segunda instrução enxerga o resultado da primeira.",
+      "Todas as expressões do lado direito são avaliadas simultaneamente antes de efetuar as atribuições.",
+      "As variáveis do lado esquerdo são resetadas para nulo antes da execução das atribuições.",
+      "As atribuições múltiplas são proibidas quando envolvem tipos escalares definidos pelo usuário."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 31,
+    "text": "A instrução UPDATE P SET PESO = PESO + 5 WHERE P# = 'P1' altera o peso da peça P1. À luz da teoria dos tipos, por que dizer que \"o valor 12 foi alterado para 17\" é INCORRETO?",
+    "options": [
+      "Porque o número 12 é um valor imutável; o que mudou foi a associação da variável ao novo valor 17.",
+      "Porque a instrução UPDATE altera apenas nomes de atributos no catálogo, mantendo os valores intactos.",
+      "Porque o valor do peso deveria ter sido convertido para string antes de efetuar a operação aritmética.",
+      "Porque a teoria relacional proíbe a adição de constantes numéricas a atributos de tabelas."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 32,
+    "text": "Sobre a declaração POSSREP (representação possível) e a representação física de um tipo escalar, assinale a afirmativa correta:",
+    "options": [
+      "A representação possível pertence ao nível lógico e define seletores; a física é oculta no nível interno.",
+      "A representação física é declarada pelo usuário no esquema; a possível é definida pelo hardware.",
+      "Ambas representam ponteiros físicos de memória visíveis nas consultas formuladas em SQL.",
+      "A representação possível aplica-se a tabelas básicas; a física aplica-se exclusivamente a visões."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 33,
+    "text": "Se \\(W1\\) for do tipo PESO e \\(N1\\) do tipo DECIMAL, por que a comparação IF W1 = N1 THEN ... é inválida em um sistema com tipagem forte?",
+    "options": [
+      "Porque o tipo primitivo DECIMAL não suporta operações de comparação de igualdade.",
+      "Porque \\(W1\\) e \\(N1\\) pertencem a tipos distintos, exigindo conversão explícita ou extração de componente.",
+      "Porque instruções condicionais em Tutorial D exigem obrigatoriamente a presença de uma cláusula WHERE.",
+      "Porque operadores de comparação só aceitam operandos do tipo lógico booleano."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 34,
+    "text": "No contexto de tipos de dados, o que é um Operador Mutador (Mutator) e qual o seu equivalente em Tutorial D?",
+    "options": [
+      "É um operador que altera a estrutura do catálogo, equivalendo ao comando DDL ALTER TABLE.",
+      "É um operador de atualização que modifica variáveis, equivalendo a atribuições e pseudovariáveis THE_.",
+      "É uma função de agregação de colunas, equivalendo ao operador estatístico COUNT().",
+      "É uma estrutura física de índice que reorganiza os nós de uma árvore B-Tree no disco."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 35,
+    "text": "Analise a correspondência conceitual entre o Modelo Relacional e a Orientação a Objetos: I. Domínio Relacional corresponde a Classe de Objetos. II. Valor de Domínio corresponde a Objeto Imutável. III. Operador de Domínio corresponde a Método. Está(ão) correta(s):",
+    "options": [
+      "Apenas as afirmativas I e II.",
+      "Apenas as afirmativas II e III.",
+      "Apenas as afirmativas I e III.",
+      "Todas as afirmativas (I, II e III)."
+    ],
+    "correct": 3
+  },
+  {
+    "id": 36,
+    "text": "Como um tipo DISTINCT em SQL difere de um DOMAIN em relação às regras de tipagem do Capítulo 5?",
+    "options": [
+      "O tipo DISTINCT cria um tipo forte não comparável com o base; o DOMAIN é um alias com coerção implícita.",
+      "O DOMAIN cria um tipo estrito da teoria relacional; o tipo DISTINCT permite linhas duplicadas.",
+      "O tipo DISTINCT aceita apenas valores do tipo texto; o DOMAIN aceita apenas valores numéricos.",
+      "Ambos possuem o mesmo comportamento rigoroso, diferindo apenas na sintaxe do comando DDL."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 37,
+    "text": "Por que a igualdade (\\(v1 = v2\\)) entre dois valores de um tipo escalar exige a Identidade de Valor?",
+    "options": [
+      "Porque se \\(v1\\) e \\(v2\\) são o mesmo valor, qualquer operador aplicado a eles produz resultados idênticos.",
+      "Porque o SGBD precisa verificar se ambos os valores ocupam o mesmo endereço físico na RAM.",
+      "Para impedir que o otimizador de consultas utilize índices secundários durante a busca.",
+      "Porque a igualdade em Tutorial D testa se duas variáveis possuem a mesma chave primária."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 38,
+    "text": "Se a consulta SELECT * FROM P WHERE PESO = '15.0'; for executada em um SGBD com tipagem forte estrita (sendo PESO um tipo DISTINCT), o que ocorre?",
+    "options": [
+      "A consulta é executada normalmente convertendo a string para o tipo PESO de forma transparente.",
+      "A consulta falha na compilação por tentar comparar um tipo DISTINCT com um literal do tipo CHAR.",
+      "O SGBD remove a coluna PESO da tabela P para evitar inconsistências nos dados armazenados.",
+      "A consulta retorna todas as tuplas da tabela ignorando a condição especificada na cláusula WHERE."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 39,
+    "text": "O que significa afirmar que os operadores de seleção (seletores) devem ser ortogonais às definições de tipo?",
+    "options": [
+      "Que qualquer expressão válida do tipo apropriado pode ser fornecida como argumento para um seletor.",
+      "Que seletores só podem ser invocados no interior de consultas que contenham a cláusula GROUP BY.",
+      "Que um seletor aceita exclusivamente constantes literais, rejeitando variáveis ou expressões derivadas.",
+      "Que os seletores devem ser programados obrigatoriamente em linguagens de baixo nível como C++."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 40,
+    "text": "A Regra de Fechamento para operações sobre tipos escalares estabelece que o resultado de um operador somente de leitura:",
+    "options": [
+      "Deve ser obrigatoriamente uma tabela contendo chave primária e chave estrangeira.",
+      "É sempre um valor pertencente a algum tipo bem-definido do sistema.",
+      "Deve ser gravado em um arquivo físico temporário antes de ser retornado ao usuário.",
+      "Não pode ser utilizado como argumento para outros operadores na mesma expressão."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 41,
+    "text": "Como a verificação de restrições de tipo se relaciona com a Lógica Trivalorada (3VL)?",
+    "options": [
+      "Restrições de tipo admitem o valor NULL, permitindo que variáveis nulas passem na checagem.",
+      "Tipos são conjuntos de valores reais; como NULL não é valor, a checagem opera sob Lógica Bivalorada (2VL).",
+      "Tipos embutidos utilizam sempre a lógica 3VL e tipos do usuário utilizam sempre a lógica 2VL.",
+      "A verificação de tipagem exige obrigatoriamente o suporte a Lógica Quadrivalorada pelo SGBD."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 42,
+    "text": "Seja o tipo RETANGULO com POSSREP {ALTURA RATIONAL, LARGURA RATIONAL} e o operador AREA(R) RETURNS RATIONAL. O operador AREA é:",
+    "options": [
+      "Um operador mutador que altera os dados do retângulo armazenados no disco físico.",
+      "Uma pseudovariável que exige privilégios de administrador para ser executada.",
+      "Um operador somente de leitura (observer) que encapsula a derivação de um valor escalar.",
+      "Um gerador de tipos não escalar responsável por construir tabelas temporárias."
+    ],
+    "correct": 2
+  },
+  {
+    "id": 43,
+    "text": "Qual a diferença funcional de um operador THE_X(V) quando posicionado do lado esquerdo versus lado direito de uma atribuição?",
+    "options": [
+      "Do lado direito lê um valor (observer); do lado esquerdo atua como pseudovariável de atualização (mutator).",
+      "Do lado direito é processado na CPU; do lado esquerdo é processado diretamente no disco rígido.",
+      "Do lado direito aplica-se apenas à SQL; do lado esquerdo aplica-se apenas à linguagem Tutorial D.",
+      "Não há diferença funcional, pois operadores THE_ só podem figurar do lado direito de atribuições."
+    ],
+    "correct": 0
+  },
+  {
+    "id": 44,
+    "text": "O gerador de tipos ARRAY (ex.: INTEGER ARRAY) introduzido no padrão SQL:1999 é classificado no Capítulo 5 como:",
+    "options": [
+      "Um tipo escalar simples pertencente ao núcleo básico do modelo relacional.",
+      "Um gerador que constrói um tipo coleção não escalar com operadores derivados.",
+      "Um substituto definitivo e completo para toda a teoria do modelo relacional.",
+      "Uma violação da Primeira Forma Normal que invalida o uso de consultas SQL."
+    ],
+    "correct": 1
+  },
+  {
+    "id": 45,
+    "text": "Qual é a síntese do autor sobre a importância da Teoria dos Tipos para os sistemas de bancos de dados relacionais?",
+    "options": [
+      "Tipos servem unicamente para otimizar a ocupação de espaço em disco nos servidores.",
+      "Tipos definem o universo de discurso do banco de dados, estabelecendo valores, atributos e operações válidas.",
+      "Tipos são conceitos teóricos abstratos que não possuem aplicação prática nos SGBDs comerciais.",
+      "A validação de tipos é responsabilidade exclusiva da aplicação cliente, devendo ser ignorada pelo SGBD."
+    ],
+    "correct": 1
+  }
+]
